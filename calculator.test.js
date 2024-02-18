@@ -1,11 +1,11 @@
 const { add, subtract, multiply, divide } = require('./calculator');
 
 test('addition', () => {
-  expect(add(2, 3)).toBe(5);
+  expect(add(4, 3)).toBe(7);
 });
 
 test('subtraction', () => {
-  expect(subtract(5, 3)).toBe(2);
+  expect(subtract(100, 3)).toBe(97);
 });
 
 test('multiplication', () => {
@@ -13,9 +13,9 @@ test('multiplication', () => {
 });
 
 test('division', () => {
-  expect(divide(6, 2)).toBe(3);
+  expect(divide(70, 2)).toBe(35);
 });
 
 test('division by zero', () => {
-  expect(divide(6, 0)).toBe('Cannot divide by zero');
+  expect(divide(500, 0)).toBe('Cannot divide by zero');
 });
